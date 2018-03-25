@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">InventoryApp</string>
+    <string name="error_add_book">Error: could not add book!</string>
+    <string name="book_added">Book successfully added!</string>
+</resources>
