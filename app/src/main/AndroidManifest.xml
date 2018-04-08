@@ -12,8 +12,7 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+        <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
@@ -22,7 +21,10 @@
             android:authorities="com.example.android.inventoryapp"
             android:exported="false" />
 
-        <activity android:name=".BookDetailActivity" android:label="@string/details_activity" android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".BookDetailActivity"
+            android:label="@string/details_activity"
+            android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>
