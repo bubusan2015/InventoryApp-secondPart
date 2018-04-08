@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/edit_activity_padding_leftright"
+    android:paddingRight="@dimen/edit_activity_padding_leftright"
+    android:paddingTop="@dimen/edit_activity_padding_leftright"
+    tools:context=".BookDetailActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/book"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_large" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_caption"
+            android:layout_width="@dimen/label_width"
+            android:layout_height="wrap_content"
+            android:text="@string/publication_title" />
+
+        <EditText
+            android:id="@+id/et_detail_title"
+            style="@style/et_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter book title"
+            android:imeOptions="actionNext"
+            android:inputType="textCapSentences" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity" />
+
+        <Button
+            android:id="@+id/bt_decrease_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/decrease_quantity" />
+
+        <EditText
+            android:id="@+id/et_detail_quantity"
+            style="@style/et_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="quantity"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textAlignment="textEnd" />
+
+        <Button
+            android:id="@+id/bt_increase_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/increase_quantity" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_caption"
+            android:layout_width="@dimen/label_width"
+            android:layout_height="wrap_content"
+            android:text="@string/price" />
+
+        <TextView
+            style="@style/et_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:text="@string/currency_USD" />
+
+        <EditText
+            android:id="@+id/et_detail_price"
+            style="@style/et_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="price"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:nextFocusRight="@id/et_detail_quantity"
+            android:textAlignment="textEnd"
+
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/edit_activity_padding_leftright"
+        android:gravity="center_horizontal"
+        android:text="@string/supplier"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_large" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_caption"
+            android:layout_width="@dimen/label_width"
+            android:layout_height="wrap_content"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/et_detail_supplier_name"
+            style="@style/et_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter supplier"
+            android:imeOptions="actionNext"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_caption"
+            android:layout_width="@dimen/label_width"
+            android:layout_height="wrap_content"
+            android:text="@string/phone" />
+
+        <EditText
+            android:id="@+id/et_detail_supplier_phone"
+            style="@style/et_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter phone"
+            android:imeOptions="actionDone"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_detail_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/order" />
+</LinearLayout>

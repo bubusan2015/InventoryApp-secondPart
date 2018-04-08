@@ -4,13 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/default_padding"
+    android:orientation="vertical"
     tools:context="com.example.android.inventoryapp.MainActivity">
 
-    <TextView
-        android:id="@+id/tv_book_items"
+    <FrameLayout
+        android:id="@+id/deal_fragment_placeholder"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:text="text view to display books in books table" />
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <FrameLayout
+        android:id="@+id/products_fragment_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:padding="@dimen/default_padding" />
 
 </LinearLayout>
